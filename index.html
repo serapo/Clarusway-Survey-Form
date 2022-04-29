@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            box-sizing: border-box;
+        }
+        h2{
+
+            margin:0;
+           font-size:70px;
+           text-align: left;
+        }
+        #altbaşlık{
+            font-size: 25px;
+        }
+        p{
+            font-size: 20px;
+        }
+        #comment{
+            resize: none;
+        }
+      
+    </style>
+</head>
+<body>
+    <h2>Clarusway Survey Form</h2>
+    <p id="altbaşlık">Thank you for taking the time to help us improve the platform</p>
+    <form>
+        <label for="name">Name</label><br><br>
+        <input type="text" placeholder="Enter your name"><br>
+        <label for="surname">Surname</label><br><br>
+        <input type="text" placeholder="Enter your Surname"><br>
+        <label for="email">Email</label><br><br>
+        <input type="email" placeholder="user@clarusway.com"><br>
+        <p>Which option best describes your current role?</p>
+        <div>
+            <select>
+                <option>Select current role</option>
+            </select>
+        </div>
+        <div>
+            <p>Would you recommend Clarusway to a friend</p>
+        </div>
+        <div>
+            <input type="radio" id="html" name="yes" value="yes">
+            <label for="yes">Definitely,Yes</label><br>
+            <input type="radio" id="maybe" name="maybe" value="maybe">
+            <label for="maybe">Maybe</label><br>
+            <input type="radio" id="notsure" name="notsure" value="notsure">
+            <label for="notsure">Not sure</label><br>
+            <input type="radio" id="no" name="no" value="no">
+            <label for="no">Definitely,No</label><br>
+        </div>
+        <div>
+           <p>What is your favorite feature of Clarusway</p>
+           <select>
+               <option>Select a option</option>
+           </select>
+        </div>
+        <div>
+            <p>What would you like to see improved?(Check all that apply)</p>
+        </div>
+        <div>
+            <input type="checkbox" id="front" name="front" value="front">
+            <label for="vehicle1"> Front-end Projects</label><br><br>
+            <input type="checkbox" id="back" name="back" value="back">
+            <label for="vehicle2"> Back end Projects</label><br><br>
+            <input type="checkbox" id="data" name="data" value="data">
+            <label for="vehicle3"> Data Science</label><br><br>
+            <input type="checkbox" id="add" name="add" value="add">
+            <label for="vehicle3"> Additional Courses</label><br>
+        </div>
+        <div>
+            <p>Any comments or suggestions?</p>
+            <textarea name="comment" id="comment" cols="20" rows="2" placeholder="Enter your comment here. Thanks for your"></textarea>
+            <input type="submit" id="submit" name="submit">
+        </div>
+      
+    </form>
+</body>
+</html>
